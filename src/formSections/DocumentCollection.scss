@@ -1,0 +1,86 @@
+.centered-container-documentation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	& > h2 {
+		margin-block: 1rem;
+	}
+	.centered-form {
+		width: 500px;
+		padding: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin-bottom: 1rem;
+
+		.requiredRedStar {
+			color: orangered;
+		}
+
+		& > div {
+			width: 100%;
+			margin-bottom: 20px;
+			label {
+				cursor: pointer;
+				position: relative;
+				color: rgb(98, 98, 98);
+				display: block;
+				margin-bottom: 8px;
+				text-transform: capitalize;
+				transition: padding 100ms ease-in-out;
+				&:hover {
+					padding-bottom: 2px;
+					border-bottom: 1px dotted rgb(193, 193, 193);
+				}
+				.fileDetails {
+					display: block;
+					font-size: x-small;
+					font-style: italic;
+					margin: 5px 0px 5px 15px;
+				}
+				.custom-file-input {
+					display: block;
+					color: transparent;
+				}
+				.attachIcon {
+					color: gray;
+					pointer-events: none;
+					position: absolute;
+					left: 5px;
+					bottom: 0;
+				}
+				.custom-file-input::-webkit-file-upload-button {
+					visibility: hidden;
+				}
+				.custom-file-input::before {
+					content: "Attach only pdf";
+					color: rgb(125, 125, 125);
+					display: inline-block;
+					background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+					border: 1px solid #999;
+					border-radius: 3px;
+					padding: 5px 8px 5px 2rem;
+					left: 10px;
+					outline: none;
+					white-space: nowrap;
+					-webkit-user-select: none;
+					cursor: pointer;
+					text-shadow: 1px 1px #fff;
+					font-weight: 700;
+					font-size: 0.9em;
+				}
+				.custom-file-input:hover::before {
+					border-color: black;
+				}
+				.custom-file-input:active {
+					outline: 0;
+				}
+				.custom-file-input:active::before {
+					background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+				}
+			}
+		}
+	}
+}

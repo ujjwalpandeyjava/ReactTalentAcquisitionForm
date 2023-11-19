@@ -1,0 +1,37 @@
+.centered-container,
+.centered-container-basic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	h2 {
+		margin-block: 1rem;
+	}
+
+	.centered-form {
+		width: 500px;
+		padding: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin-bottom: 1rem;
+
+		.requiredRedStar {
+			color: orangered;
+		}
+
+		& > div {
+			width: 100%;
+			margin-bottom: 20px;
+			label {
+				display: block;
+				margin-bottom: 8px;
+				text-transform: capitalize;
+				display: block;
+				width: 100%;
+				color: rgb(100, 100, 100);
+			}
+		}
+	}
+}

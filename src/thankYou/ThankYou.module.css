@@ -1,0 +1,12 @@
+#body {
+	height: 80dvh;
+	display: flex;
+	font-size: 5rem;
+	font-style: italic;
+	font-family: emoji;
+	justify-items: end;
+	justify-content: center;
+	gap: 1.3rem;
+	align-items: center;
+	pointer-events: none;
+}

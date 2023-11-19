@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, source-code-pro, Menlo, Monaco, Consolas, sans-serif, "Courier New", monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+select,
+textarea,
+input:not([type="file"]) {
+	border: 2px solid transparent;
+	border-radius: 10px;
+	width: 100%;
+	padding: 0.4rem 0.8rem;
+	outline: none;
+	margin-top: 0.35rem;
+	margin-bottom: 5px;
+	overflow: hidden;
+	background-color: #f3f3f3;
+	display: block;
+	transition: all 0.5s;
+	&:hover,
+	&:focus {
+		border: 2px solid #4a9dec;
+		box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+		background-color: white;
+	}
+}
+
+button[type="submit"] {
+	display: flex;
+	font-size: 1.1em;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	background-color: #4caf50;
+	border-radius: 4px;
+	margin-left: 100%;
+	transform: translateX(-100%);
+	gap: 0;
+	transition: all 200ms ease-in-out;
+	&:hover {
+		background-color: #45a049;
+		gap: 5px;
+	}
+}
+
+.toRight {
+	.note {
+		font-size: 0.8rem;
+		margin-top: 8px;
+		color: rgba(47, 79, 79, 0.453);
+		pointer-events: none;
+	}
+	text-align: right;
+	margin: 0 !important;
+}
